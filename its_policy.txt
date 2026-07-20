@@ -1,0 +1,99 @@
+SUNY Fredonia - Acceptable Use Policy: Information Technology
+
+SECTION I: REASON FOR POLICY
+Access to information technology is essential to the mission of SUNY Fredonia in providing students, faculty, and staff with educational services of the highest quality. The privilege of using computing systems, software, internal and external data networks, and the Internet is made available to all Fredonia community members. Each user must comply with institutional and external standards for appropriate use, whether on campus or from remote locations.
+
+SECTION II-A: SCOPE
+This policy covers all creation, processing, communication, distribution, storage, and disposal of information using any combination of Fredonia and non-Fredonia resources.
+
+Technology resources covered include:
+- All Fredonia owned, operated, leased, or contracted computing and networking resources, whether individually controlled, shared, standalone, or networked
+- All information maintained in any form within Fredonia's computer resources and data networks
+- All physical facilities including hardware, software, applications, databases, and storage media
+
+SECTION II-B: DEFINITIONS
+Authentication Credentials: Assigned UserID/Username and PIN/Password that, used together, authenticate users to computing facilities and resources.
+Computing Facilities: All software applications, desktop and mobile computers, networks, and peripherals licensed, owned, or operated by Fredonia.
+e-Services: Electronic services such as email, Learning Management System, and electronic library resources.
+Internet: All networks external to Fredonia.
+Intranet: All networks internal to Fredonia.
+Managed: Software and antivirus upgrades controlled by a server and pushed to the desktop or laptop automatically.
+Unmanaged: A computing device where the user installs all upgrades manually.
+Users: All individuals who use Fredonia technology resources, including students, faculty, staff, authorized guests, volunteers, and visiting scholars.
+
+SECTION II-C: POLICY STATEMENT
+Users must comply with federal and state laws, Fredonia rules and policies, and applicable software licenses when using Fredonia computing resources.
+
+Users who communicate electronically with persons in other states or countries may be subject to the laws of those jurisdictions.
+
+Users are responsible for any activity originating from their accounts that they can reasonably be expected to control.
+
+Accounts and passwords may not under any circumstances be used by persons other than those to whom they were assigned.
+
+If unauthorized use of an account is detected or suspected, the account owner must change their password and report the incident immediately.
+
+Fredonia may require users to limit or refrain from specific uses if such use interferes with efficient system operations, as determined by the system administrator.
+
+Users must refrain from wasteful practices such as printing unnecessarily large documents, performing endless unnecessary computations, or holding public computers for long periods when others are waiting.
+
+Users must not use computing resources to gain unauthorized access to remote computers or impair the operations of computers or networks. This includes blocking communication lines, intercepting or sniffing communications, and running or sharing virus programs.
+
+Deliberate attempts to circumvent data protection or security measures are not allowed.
+
+Network services and wiring may not be tampered with or extended beyond their intended use. Users shall not use the residential network to provide Internet access to anyone outside the Fredonia community except in direct support of Fredonia's academic mission.
+
+SECTION II-D: USER ACCOUNTS
+Use of Fredonia's computer systems requires a user account issued by Fredonia. Every account is the responsibility of the person in whose name it is issued.
+
+Continued use of a "@fredonia.edu" email account by an inactive or transferred student is at the discretion of the Chief Information Office.
+
+Fredonia recognized clubs and student organizations may be issued a user account. Faculty advisors must designate a person authorized to act on behalf of the club, who is responsible for all activity on the account.
+
+The following are considered theft of services and subject to penalties:
+- Using a username without explicit permission of the owner and of Information Technology Services
+- Allowing one's username to be used by another person
+- Using former system and access privileges after association with Fredonia has ended
+
+SECTION II-E: RESOURCES
+Fredonia's information technology resources are finite. Users shall not use information technology resources to excess. Excessive use reduces resources available to others, may degrade system functionality, and can result in significant costs to Fredonia.
+
+Examples of excessive use include writing a program or script or using an Internet bot to perform repetitive tasks such as attempting to register for a class or purchasing concert tickets online.
+
+Users shall limit incidental personal use. Incidental personal use is permitted when it does not result in any measurable cost to Fredonia and does not interfere with professional responsibilities or Fredonia's mission. Examples of acceptable incidental personal use include sending a personal email or visiting a non-work-related website.
+
+SECTION II-F: SECURITY AND PRIVACY
+Fredonia employs measures to protect the security of its computing resources but cannot guarantee complete security and confidentiality. Users should practice safe computing by establishing appropriate access restrictions and changing passwords regularly.
+
+Users shall not intentionally view, modify, or obtain copies of other users' files, access other users' email, or modify other users' passwords without permission.
+
+Users shall not develop or use procedures to alter or avoid accounting and monitoring of computing facility use. Users may not utilize facilities anonymously or by means of an alias.
+
+Fredonia computers are state-owned assets. Fredonia retains the right to access these resources directly or through remote access tools at any time.
+
+While Fredonia does not routinely monitor individual usage, normal operations may require backup and caching of data, logging of activity, and monitoring of general usage patterns. Fredonia may specifically monitor individual accounts without notice when:
+- The user has made information publicly accessible
+- It appears necessary to protect the integrity, security, or functionality of Fredonia's computing resources
+- There is reasonable cause to believe the user has violated this policy or any law
+- An account appears to be engaged in unusual or excessive activity
+- Access is required or permitted by law
+
+SECTION II-G: LAWS AND FREDONIA POLICIES
+Users must employ technology resources consistent with local, state, and federal laws. This includes:
+- Complying with all federal copyright law
+- Not downloading, using, or distributing illegally obtained media such as software, music, or movies
+- Not uploading, downloading, distributing, or possessing pornography unless written approval has been granted by the Vice President of Academic Affairs for academic research, conducted in an isolated environment approved by the Associate Vice President of Information Technology
+
+SECTION II-H: COMMERCIAL USE
+Keywords: personal business, business use, commercial activities, selling, profit, financial gain, personal enterprise
+Computing resources must not be used for personal commercial purposes or personal financial gain.
+
+SECTION II-I: ENFORCEMENT
+Users who violate this policy may be denied access to Fredonia's computing resources and may face other penalties including possible expulsion or dismissal. Alleged violations will be handled through Fredonia's disciplinary procedures.
+
+Fredonia may suspend, block, or restrict access to an account when necessary to protect the integrity, security, or functionality of computing resources or to protect Fredonia from liability.
+
+Fredonia may refer suspected violations of applicable law to appropriate law enforcement agencies.
+
+When Information Technology Services becomes aware of a possible violation, it will initiate an investigation in conjunction with relevant campus offices including the President's Cabinet, Human Resources, and University Police. Users are expected to cooperate fully with such investigations.
+
+Information Technology Services may suspend authorization for use of all computing facilities for users involved in a violation during the course of an investigation.
