@@ -8,8 +8,14 @@ from langchain_community.document_loaders import TextLoader
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+from escalation import should_escalate, show_escalation
 
 load_dotenv()
+
+# PLACEHOLDER contact info — swap for Fredonia Flowers' real contact details
+# once you have them (this is a fictional test company right now).
+CONTACT_NAME = "our team"
+CONTACT_LINE = "📞 (555) 123-4567  |  ✉️ hello@fredoniaflowers.example"
 
 # On Streamlit Community Cloud, the OpenAI key comes from st.secrets instead
 # of a local .env file. Locally, there is no secrets.toml file at all, and
@@ -99,5 +105,7 @@ if user_question:
         with st.spinner("Thinking..."):
             response = chain.invoke(user_question)
             st.markdown(response)
+            if should_escalate(user_question, response):
+                show_escalation(CONTACT_NAME, CONTACT_LINE)
 
     st.session_state.messages.append({"role": "assistant", "content": response})

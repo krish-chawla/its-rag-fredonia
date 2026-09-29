@@ -8,6 +8,7 @@ from langchain_community.document_loaders import TextLoader
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+from escalation import should_escalate, show_escalation
 
 load_dotenv()
 
@@ -17,6 +18,13 @@ try:
         os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 except Exception:
     pass
+
+# PLACEHOLDER contact info — I don't have SUNY Fredonia's actual ITS Help
+# Desk phone/email, so do NOT ship this as-is. Confirm the real details
+# (likely on Fredonia's IT Help Desk webpage, or ask Dr. Zubairi) and
+# replace both lines below before this goes in front of real users.
+CONTACT_NAME = "the ITS Help Desk"
+CONTACT_LINE = "📞 [ITS Help Desk phone — 716-673-3407]  |  ✉️ [ITS Help Desk email — ITS.ServiceCenter@fredonia.edu]"
 
 st.set_page_config(page_title="ITS Assistant", page_icon="💻")
 st.title("💻 SUNY Fredonia ITS Assistant")
@@ -109,5 +117,7 @@ if user_question:
         with st.spinner("Thinking..."):
             response = chain(user_question)
             st.markdown(response)
+            if should_escalate(user_question, response):
+                show_escalation(CONTACT_NAME, CONTACT_LINE)
 
     st.session_state.its_messages.append({"role": "assistant", "content": response})
