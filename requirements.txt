@@ -6,3 +6,6 @@ langchain-chroma
 langchain-text-splitters
 python-dotenv
 chromadb
+pandas
+ortools
+pydantic

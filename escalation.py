@@ -29,9 +29,15 @@ HUMAN_REQUEST_PHRASES = [
     "real person",
     "human being",
     "customer service rep",
-    "representative",
-    "agent",
+    "a representative",
+    "live agent",
+    "human agent",
+    "real agent",
     "speak to a rep",
+    # NOTE: bare "agent" / "representative" were removed on purpose. This is
+    # a plain substring match, so "agent" fired on ITS questions like
+    # "what's a user agent?" (the VPN steps literally mention
+    # "user-agent") and showed the escalation box for no reason.
 ]
 
 
