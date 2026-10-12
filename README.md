@@ -29,7 +29,7 @@ the user asks for a person, it shows the right contact info.
 ```bash
 pip install -r requirements.txt
 echo "OPENAI_API_KEY=sk-..." > .env
-streamlit run app.py
+streamlit run app.py   # opens on the Fredonia Flowers page
 ```
 
 Self-tests for the non-AI logic:
