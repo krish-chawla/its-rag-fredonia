@@ -1,0 +1,131 @@
+SUNY Fredonia ITS - Common Help Topics (How-To Guide)
+
+Source: SUNY Fredonia ITS web pages and the Fredonia "Answers" knowledge base (fredonia-edu.atlassian.net), gathered October 2026. Details can change; when in doubt, users should confirm with the ITS Service Center.
+
+TOPIC: CONNECTING TO WIFI ON CAMPUS (EDUROAM)
+Q: How do I connect to WiFi on campus?
+A: The campus wireless network is called "eduroam". It is available across campus, including outdoor wireless areas. To connect:
+1. If you previously connected to the old network called "FREDsecure", forget that network on your device first.
+2. Select "eduroam" from the list of available Wi-Fi networks and tap Connect or Join.
+3. Username: your eServices ID followed by @fredonia.edu (for example, eservicesID@fredonia.edu).
+4. Password: your eServices password (the same password used for email, FREDLearn, and campus computers).
+5. The first time you connect, accept or "trust" the certificate that is presented.
+Step-by-step guides with screenshots exist in the Fredonia Answers knowledge base for Windows 10 and 11, Mac OS, iOS, Android, Chromebook, and Linux (Ubuntu).
+
+Q: Can I use eduroam at other colleges or when traveling?
+A: Yes. eduroam also works at participating institutions in the United States and abroad. Log in with the same eservicesID@fredonia.edu username and eServices password. Visitors from other eduroam schools can connect at Fredonia using their own home-school credentials (for example, campusid@campusdomain.edu).
+
+Q: What is my WiFi password? / I forgot my password.
+A: There is no separate WiFi password. eduroam uses your eServices password. Passwords are managed through fredPASS, Fredonia's self-service password portal. Students who cannot log in can also email the ITS Service Center from their Fredonia email address and ask for a password reset.
+
+TOPIC: GAMING CONSOLES, SMART TVS, AND MEDIA DEVICES (FREDMEDIA)
+Q: How do I connect my Xbox, PlayStation, Nintendo Switch, smart TV, or streaming device?
+A: Multimedia and gaming devices that cannot log in to eduroam use the FREDmedia network. To register a device:
+1. While on campus, go to the My Devices Portal at https://mydevices.fredonia.edu/ (this link only works on campus).
+2. Log in with your eServices user ID and password.
+3. Enter the device's MAC address (also called the Wi-Fi address). It looks like six pairs of letters and numbers separated by colons, for example A1:B2:C3:D4:E5:F6. The Fredonia Answers knowledge base has a guide called "Finding the MAC Address for Gaming Devices".
+4. Click Submit, then restart the device.
+After registration, the device can connect to the FREDmedia wireless network or to the campus wired network. For help in residence halls, contact the ResNet Office (716-673-3668, resnet@fredonia.edu). For help in academic buildings, contact the ITS Service Center (716-673-3407).
+
+TOPIC: LAPTOP AND COMPUTER RECOMMENDATIONS FOR STUDENTS
+Q: What laptop should I buy for college? What are the recommended specs?
+A: ITS publishes minimum and recommended specifications:
+- Windows PC, minimum: Windows 10 or newer, Intel Core i5 or AMD Ryzen 5 processor, 8 GB RAM, 250 GB storage, graphics card.
+- Windows PC, recommended: Intel Core i7 / AMD Ryzen 7 or higher, 16 GB RAM or more, 500 GB storage or more, dedicated Nvidia or AMD graphics card.
+- Mac, minimum: macOS 10.15 Catalina or newer, 8 GB RAM, 250 GB storage.
+- Mac, recommended: 16 GB RAM or more, 500 GB storage or more.
+All computers should have a built-in microphone, webcam, and Wi-Fi (Ethernet capability is also recommended). For online or remote classes, a headset, headphones, or earbuds with a microphone is recommended.
+Note: The ITS recommendations page is archived and marked as needing an update, so students should confirm current requirements with their department or the ITS Service Center before buying. In general, buying above the minimum (16 GB RAM) helps a laptop last all four years.
+
+Q: Can I use a Chromebook?
+A: Chromebooks work for some majors but have a major limitation: users cannot install regular software on a Chromebook, only apps from the Google Play Store. Chromebooks are listed as acceptable for Education, Music, and Theatre & Dance students, but not for majors that need installed software (for example Computer & Information Sciences, Business, Physics, or the sciences).
+
+Q: What computer do I need for my major? (department-specific recommendations)
+A: Recommendations by department (from the ITS Student Technology Recommendations page):
+- Computer & Information Sciences: Windows laptop PC; Microsoft Office.
+- Business Administration: Windows PC (desktop or laptop), numeric keypad or a USB port for one is recommended; Microsoft Office and a PDF reader.
+- Physics: Desktop PC recommended; Microsoft Office plus Mathematica or Maple.
+- Geosciences: Windows PC; Microsoft Office, 7-Zip, and DNR Garmin.
+- Chemistry and Biochemistry, Communication Disorders and Science, Economics, Applied Professional Studies: Windows PC (desktop or laptop); Microsoft Office (Economics and Applied Professional Studies also recommend a PDF reader).
+- Education: Chromebook, Mac, or PC with webcam and microphone; Microsoft Office.
+- Music: Chromebook, Mac, or PC with webcam and microphone; an Android tablet or iPad is also useful; Microsoft Office.
+- Theatre & Dance: Chromebook, Mac, or PC; Android tablet or iPad optional.
+- English: Microsoft Office and Google Apps.
+- Communication, History, Mathematical Sciences, Philosophy, Psychology, Sociocultural and Justice Sciences, World Languages and Cultures: Microsoft Office; no specific hardware requirement.
+- Visual Arts & New Media: has its own separate recommendations list; check with the department.
+- Biology, Politics & International Affairs: no specific recommendations listed.
+
+Q: Where can I get a discount on a laptop or software?
+A: ITS points students to the Dell University Store for Fredonia, the Apple Education Store, and Google's Chromebook site for education pricing. Adobe offers student pricing through Adobe Creative Cloud for Students and Teachers. Microsoft 365 web apps (Word, Excel, PowerPoint, OneNote, Outlook, OneDrive) are available to students through their Fredonia account.
+
+Q: I can't afford a laptop / my laptop broke. Can I borrow one?
+A: Yes. The FRED Laptop Program (FLP) lets any enrolled Fredonia student borrow a pre-configured Windows laptop with Microsoft Office 365 or a Chromebook at no cost. Laptops are limited and issued first come, first served. To apply, go to the ITS Service Center, 2nd floor of Thompson Hall (W203), and complete an application. Key rules:
+- Loans are issued for a set period and must be renewed in person to keep the laptop longer; laptops must be returned or renewed at the end of each semester (students registered for the next semester can request an extension over breaks).
+- Repairs are done only by ITS; do not take the laptop to a third-party repair shop. A free temporary loaner is given if a repair takes a long time.
+- The student is financially responsible for the full replacement value if the laptop is lost or stolen. Theft must be reported to police within 24 hours.
+- Students leaving Fredonia must return the laptop right away, or face a financial hold and a replacement charge.
+
+TOPIC: EMAIL ACCESS (ON CAMPUS, OFF CAMPUS, AND WHILE TRAVELING)
+Q: How do I access my Fredonia email?
+A: Fredonia email (FREDmail) runs on Microsoft 365. Go to https://outlook.office.com in any web browser (Microsoft Edge is recommended; Chrome and Firefox also work) and sign in with your eServicesID@fredonia.edu and eServices password. Your primary address is usually firstname.lastname@fredonia.edu. ITS officially supports Outlook on the web; the Fredonia Answers knowledge base also has setup directions for Outlook on Android and iPhone. If you are setting up email on a phone that used the old fredonia.edu Gmail, remove those old Gmail account settings from the phone first.
+
+Q: Can I access my email while traveling or off campus?
+A: Yes. Because email is web-based (outlook.office.com), you can reach it from anywhere with an internet connection; no VPN is needed for email. What changes when traveling is multi-factor authentication (MFA):
+- You will be asked for MFA when signing in from a new device off campus.
+- The Microsoft Authenticator app is designed to work internationally. If you have cell service or WiFi abroad, approve the push notification as usual.
+- If you have no cell service, open Microsoft Authenticator and use the one-time verification code it shows (this works offline) instead of a push approval.
+- Text message (SMS) codes are not permitted at SUNY Fredonia, so do not rely on texts.
+- International phone numbers are supported for MFA; choose your country in the drop-down when adding the number.
+Before you travel: make sure Microsoft Authenticator is set up and working, and register at least two sign-in methods (for example, the Authenticator app plus a phone number) so you have a backup. Manage your methods at https://aka.ms/mysecurityinfo. Sign-ins from outside the United States may be subject to extra location-based restrictions (ITS maintains a "GeoIP Fencing" FAQ), so contact the ITS Service Center before an international trip to confirm you will be able to sign in.
+
+Q: I'm getting a new phone / I lost my phone. How do I keep using MFA?
+A: Before switching phones, add the new phone as a sign-in method at https://aka.ms/mysecurityinfo while you still have the old one. If your phone is lost or stolen, contact the ITS Service Center immediately (716-673-3407 or help@fredonia.edu); they will remove your MFA methods and reset your sessions so you can set up new ones. Employees who do not want to use a personal phone for MFA can request a security token from the ITS Service Center.
+
+Q: What does "Don't ask again for 14 days" do?
+A: It skips MFA prompts for 14 days, but only on that specific device and browser. If your browser clears cookies when closed, it will not remember the choice.
+
+Q: How much email and OneDrive storage do I get?
+A: Students (and alumni within two years): 5 GB email and 15 GB OneDrive. Faculty and staff: 25 GB email and 25 GB OneDrive. Requests for more storage go to help@fredonia.edu.
+
+TOPIC: VPN (VIRTUAL PRIVATE NETWORK)
+Q: Do I need a VPN?
+A: Most students do not. Email, FREDLearn, YourConnection, and Microsoft 365 all work from off campus without a VPN. The VPN is needed to reach certain internal campus resources from off campus, such as the Fredonia Terminal Server. Contact the ITS Service Center if you are unsure whether your account has VPN access.
+
+Q: How do I set up the VPN?
+A: Fredonia's VPN uses the FortiClient VPN app. Steps:
+1. If you have an older version of FortiClient on a personal computer, uninstall it first.
+2. Go to the VPN portal at vpn.fredonia.edu and sign in with your eServices username and password.
+3. On the portal page, use the "Download FortiClient" drop-down to choose your operating system and download the installer. (iPhone/iPad and Android users install FortiClient VPN from their app store instead.)
+4. Windows: run the FortiClientVPNOnlineInstaller from your Downloads folder (local administrator rights are required), accept the license agreement, then click Next, Install, and Finish.
+5. Open FortiClient, accept the acknowledgment, and select "Configure VPN".
+6. Enter any connection name (for example "Fredonia VPN"), set the Remote Gateway to vpn.fredonia.edu, and enable Single Sign On (SSO) for the VPN tunnel.
+7. On Windows, do NOT check the "use external browser" SAML option; it causes connection failures in the Windows version.
+8. Save, click "SAML Login", and sign in with your Fredonia credentials (and MFA).
+On a Mac the installer looks slightly different but the settings are the same. On iPhone/iPad and Android, DO check "Use external browser as user-agent for SAML user authentication" in the connection settings. Your computer's firewall may also need to allow FortiClient. University-owned computers receive FortiClient automatically.
+
+Q: How do I use the Fredonia Terminal Server (remote desktop)?
+A: First ask to be added as a Terminal Server user by emailing help@fredonia.edu / submitting a Tracker ticket. Once added: connect to the VPN, open Remote Desktop Connection (on Windows, search for "Remote Desktop"), enter TS5 as the computer name, and log in with your eServices credentials.
+
+TOPIC: ACCOUNTS AND PASSWORDS
+Q: What is my eServices account and what does it give me access to?
+A: Your eServices account (eServicesID@fredonia.edu) is your main Fredonia login. It is used for campus WiFi, email, YourConnection (registration, financial aid, grades), FREDLearn, campus computers, and OneDrive. All users set up and manage their account through fredPASS. Your Fredonia ID (F#, starting with the letter F) is a separate campus identifier used in place of a Social Security Number.
+
+Q: I'm a new employee. How do I get my account?
+A: After being hired, call Human Resources at (716) 673-3434 to get your eServices account and Fredonia ID.
+
+Q: I'm an incoming first-year student and can't log in to YourConnection.
+A: Contact the Admissions Office at 716-673-3251.
+
+TOPIC: SECURITY AND PHISHING
+Q: I got a suspicious email. What should I do?
+A: Do not click links or reply. Forward the message (with full header information if possible) to ITS.ServiceCenter@fredonia.edu so ITS can check whether it is legitimate, then delete it. If you already clicked a link or entered your password, contact the ITS Service Center immediately at 716-673-3407 and change your password through fredPASS.
+
+Q: How do I report a security incident?
+A: Report cybersecurity incidents to the ITS Service Center (716-673-3407). Report physical security incidents to University Police (716-673-3333).
+
+TOPIC: GETTING HELP FROM ITS
+Q: How do I contact ITS / where is the help desk?
+A: The ITS Service Center is in W203 Thompson Hall (2nd floor). Phone: 716-673-3407. Email: ITS.ServiceCenter@fredonia.edu (help@fredonia.edu also reaches the Service Center). You can also submit a ticket online through Tracker (tracker.fredonia.edu). Semester hours: Monday-Thursday 8:00am-6:00pm, Friday 8:00am-4:30pm, Saturday 12:00pm-5:00pm, Sunday closed. Summer and break hours: Monday-Friday 8:00am-4:00pm.
+
+Q: Who helps with internet problems in the residence halls?
+A: The ResNet Office handles tech support in the residence halls. Phone: 716-673-3668. Email: resnet@fredonia.edu. Location: W203 Thompson Hall. ResNet keeps the same hours as the ITS Service Center.

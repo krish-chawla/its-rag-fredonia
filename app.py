@@ -30,7 +30,17 @@ except Exception:
 
 st.set_page_config(page_title="Fredonia Flowers Assistant", page_icon="🌷")
 st.title("🌷 Fredonia Flowers — Customer Service Assistant")
-st.caption("Ask a question about our flowers, orders, delivery, or policies.")
+st.caption("Ask about prices, orders, delivery, returns and refunds, hours, or flower care.")
+
+with st.expander("Example questions"):
+    st.markdown(
+        "- Can I see your price list?\n"
+        "- How much is a dozen roses in a vase delivered?\n"
+        "- What is your return policy?\n"
+        "- Can I cancel my order?\n"
+        "- Are lilies safe if I have a cat?\n"
+        "- Do you have a student discount?"
+    )
 
 
 @st.cache_resource(show_spinner="Loading knowledge base...")
@@ -41,7 +51,9 @@ def build_chain():
     loader = TextLoader(os.path.join(dir_path, "company_docs.txt"))
     documents = loader.load()
 
-    splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    # 800-character chunks keep each "PRICE LIST - ..." section together in
+    # one chunk, so a question about roses retrieves the whole rose table.
+    splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
     chunks = splitter.split_documents(documents)
 
     embeddings = OpenAIEmbeddings()
@@ -51,7 +63,7 @@ def build_chain():
         collection_name="fredonia_flowers",
         persist_directory=None,
     )
-    retriever = vectorstore.as_retriever()
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
 
     def format_docs(docs):
         return "\n\n".join(doc.page_content for doc in docs)
@@ -62,6 +74,10 @@ Use the context below to answer the customer's question.
 If the context contains relevant information, use it to give a helpful answer.
 If the question is general and you can reasonably answer it from the context or common sense, do so.
 Only say "I don't have that information" if the question is completely unrelated to the business.
+Prices, fees, and policies (returns, refunds, cancellations, deadlines) must come ONLY from the
+context. Never guess a price or a policy; if it isn't in the context, say "I don't have that information."
+When the customer asks for prices or a price list, format the prices as a markdown table
+(columns: Item, Price). When adding up a total, show each line item and the total.
 
 Context: {context}
 

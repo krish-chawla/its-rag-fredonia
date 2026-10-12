@@ -19,24 +19,47 @@ try:
 except Exception:
     pass
 
-# PLACEHOLDER contact info — I don't have SUNY Fredonia's actual ITS Help
-# Desk phone/email, so do NOT ship this as-is. Confirm the real details
-# (likely on Fredonia's IT Help Desk webpage, or ask Dr. Zubairi) and
-# replace both lines below before this goes in front of real users.
-CONTACT_NAME = "the ITS Help Desk"
-CONTACT_LINE = "📞 [ITS Help Desk phone — 716-673-3407]  |  ✉️ [ITS Help Desk email — ITS.ServiceCenter@fredonia.edu]"
+# Real contact info for SUNY Fredonia's ITS Service Center, verified against
+# fredonia.edu/about/offices/information-technology-services/contacts
+# (Sept/Oct 2026). Re-check each semester in case hours change.
+CONTACT_NAME = "the ITS Service Center"
+CONTACT_LINE = "📞 716-673-3407  |  ✉️ ITS.ServiceCenter@fredonia.edu  |  📍 W203 Thompson Hall"
+CONTACT_NOTE = (
+    "Semester hours: Mon–Thu 8am–6pm, Fri 8am–4:30pm, Sat 12–5pm, closed Sun. "
+    "You can also submit a ticket through Tracker (tracker.fredonia.edu)."
+)
+
+# The two knowledge-base files this bot answers from:
+#   its_policy.txt       -> the formal Acceptable Use Policy
+#   its_help_topics.txt  -> practical how-to topics (WiFi, laptops, email
+#                           while traveling, VPN, MFA, accounts, phishing)
+KNOWLEDGE_FILES = ["its_policy.txt", "its_help_topics.txt"]
 
 st.set_page_config(page_title="ITS Assistant", page_icon="💻")
 st.title("💻 SUNY Fredonia ITS Assistant")
-st.caption("Ask a question about the Acceptable Use Policy for IT resources.")
+st.caption(
+    "Ask about WiFi, laptops, email and MFA while traveling, VPN setup, "
+    "accounts, or the IT Acceptable Use Policy."
+)
+
+with st.expander("Example questions"):
+    st.markdown(
+        "- How do I connect to WiFi on campus?\n"
+        "- What laptop should I buy as a computer science major?\n"
+        "- Can I check my email while I'm studying abroad?\n"
+        "- How do I set up the VPN?\n"
+        "- How do I connect my PlayStation in my dorm?\n"
+        "- Can I use campus computers to run my own business?"
+    )
 
 
-@st.cache_resource(show_spinner="Loading ITS policy...")
+@st.cache_resource(show_spinner="Loading ITS knowledge base...")
 def build_chain():
     """Builds the RAG chain (with query rewriting) once per app session."""
     dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    loader = TextLoader(os.path.join(dir_path, "its_policy.txt"))
-    documents = loader.load()
+    documents = []
+    for filename in KNOWLEDGE_FILES:
+        documents.extend(TextLoader(os.path.join(dir_path, filename)).load())
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
     chunks = splitter.split_documents(documents)
@@ -50,19 +73,27 @@ def build_chain():
     vectorstore = Chroma.from_documents(
         documents=chunks,
         embedding=embeddings,
-        collection_name="its_policy",
+        collection_name="its_knowledge",
     )
     retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
 
     llm = ChatOpenAI(model="gpt-4o-mini")
 
-    # Query rewriter — bridges vocabulary gaps before retrieval
+    # Query rewriter — bridges vocabulary gaps before retrieval. It now has
+    # to handle BOTH formal policy questions and casual how-to questions, so
+    # it keeps the user's concrete keywords (wifi, VPN, laptop, ...) and adds
+    # the matching official terms instead of replacing them.
     rewrite_prompt = ChatPromptTemplate.from_template("""
-You are a query rewriting assistant. Rewrite the following question
-using formal vocabulary that would appear in a university IT policy document.
-Use terms like: commercial use, personal financial gain, incidental personal use,
-acceptable use, computing resources, authorized use.
-Return only the rewritten question, nothing else.
+You are a query rewriting assistant for a university IT help knowledge base.
+The knowledge base has two kinds of content:
+1. A formal IT Acceptable Use Policy (terms like: commercial use, personal financial
+   gain, incidental personal use, acceptable use, computing resources, authorized use).
+2. Practical how-to help topics (terms like: eduroam, WiFi, eServices, fredPASS,
+   FREDmedia, MAC address, laptop specifications, FRED Laptop Program, Outlook,
+   Microsoft 365, MFA, Microsoft Authenticator, traveling, FortiClient VPN,
+   Terminal Server, phishing, ITS Service Center, ResNet).
+Rewrite the question so it keeps the user's original keywords AND adds the official
+terms above that match it. Return only the rewritten question, nothing else.
 
 Original question: {question}
 """)
@@ -71,6 +102,8 @@ Original question: {question}
     prompt = ChatPromptTemplate.from_template("""
 You are a helpful assistant for SUNY Fredonia's ITS department.
 Answer the question based only on the following context.
+When the answer is a procedure, give it as numbered steps.
+Include exact names, addresses, and links from the context (for example vpn.fredonia.edu).
 If the answer is not in the context, say "I don't have that information."
 
 Context: {context}
@@ -118,6 +151,6 @@ if user_question:
             response = chain(user_question)
             st.markdown(response)
             if should_escalate(user_question, response):
-                show_escalation(CONTACT_NAME, CONTACT_LINE)
+                show_escalation(CONTACT_NAME, CONTACT_LINE, CONTACT_NOTE)
 
     st.session_state.its_messages.append({"role": "assistant", "content": response})
