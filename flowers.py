@@ -35,6 +35,8 @@ st.caption("Ask about prices, orders, delivery, returns and refunds, hours, or f
 with st.expander("Example questions"):
     st.markdown(
         "- Can I see your price list?\n"
+        "- Can I order 12 roses now?\n"
+        "- Can I add chocolates to my order?\n"
         "- How much is a dozen roses in a vase delivered?\n"
         "- What is your return policy?\n"
         "- Can I cancel my order?\n"
