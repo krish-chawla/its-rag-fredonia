@@ -49,6 +49,8 @@ with st.expander("Example questions"):
         "- Can I check my email while I'm studying abroad?\n"
         "- How do I set up the VPN?\n"
         "- How do I connect my PlayStation in my dorm?\n"
+        "- My account is locked. How can I unlock it?\n"
+        "- Office keeps telling me to renew my license. How do I fix it?\n"
         "- Can I use campus computers to run my own business?"
     )
 
@@ -91,7 +93,8 @@ The knowledge base has two kinds of content:
 2. Practical how-to help topics (terms like: eduroam, WiFi, eServices, fredPASS,
    FREDmedia, MAC address, laptop specifications, FRED Laptop Program, Outlook,
    Microsoft 365, MFA, Microsoft Authenticator, traveling, FortiClient VPN,
-   Terminal Server, phishing, ITS Service Center, ResNet).
+   Terminal Server, phishing, ITS Service Center, ResNet, account locked, password reset,
+   Microsoft Office license, unlicensed product, portal.office.com).
 Rewrite the question so it keeps the user's original keywords AND adds the official
 terms above that match it. Return only the rewritten question, nothing else.
 

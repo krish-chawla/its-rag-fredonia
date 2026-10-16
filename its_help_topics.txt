@@ -116,6 +116,34 @@ A: After being hired, call Human Resources at (716) 673-3434 to get your eServic
 Q: I'm an incoming first-year student and can't log in to YourConnection.
 A: Contact the Admissions Office at 716-673-3251.
 
+Q: My account is locked. How can I unlock it? / I can't log in to my eServices account.
+A: Accounts usually lock after too many failed sign-in attempts. To get back in:
+1. Reset your eServices password through fredPASS, Fredonia's self-service password portal (linked from the ITS "eServices Password Reset" page on fredonia.edu). Resetting your password is the fastest way to regain access.
+2. After resetting, sign in again with eServicesID@fredonia.edu and the new password. Remember to update the saved password on your phone, laptop, and the eduroam WiFi network too; devices still trying the old password can lock the account again.
+3. If fredPASS does not work or the account stays locked, contact the ITS Service Center: call 716-673-3407, visit W203 Thompson Hall, or (if you can still reach your Fredonia email) email ITS.ServiceCenter@fredonia.edu. Have your Fredonia ID (F#) ready so staff can verify your identity.
+4. If you think someone else tried to get into your account, tell the ITS Service Center right away.
+
+TOPIC: MICROSOFT OFFICE (MICROSOFT 365) INSTALL AND LICENSE
+Q: How do I get Microsoft Office? Is it free for students?
+A: Currently enrolled students and active faculty and staff can install the Microsoft 365 apps (Word, Excel, PowerPoint, Outlook, and more) through their Fredonia account:
+1. Go to https://portal.office.com and sign in with your Fredonia email (eServicesID@fredonia.edu) and eServices password.
+2. In the upper-right corner, open the "Install and more" drop-down.
+3. Select "Install Microsoft 365 apps" and run the installer.
+4. Open any Office app and sign in with your Fredonia account to activate it.
+The web versions of Word, Excel, PowerPoint, and Outlook also work in any browser at https://outlook.office.com and portal.office.com without installing anything.
+
+Q: Microsoft Office keeps telling me to renew my license / says "unlicensed product" or "subscription expired". How do I fix it?
+A: Your Office license comes from your Fredonia account, so this message usually means Office is signed in with the wrong account, or it has not checked in with your Fredonia account recently. To refresh the license:
+1. Open Word (or any Office app) and go to File > Account (on a Mac: the Word menu > Sign Out, or the account icon at the top right).
+2. Under "User Information," check which account is shown. If it is a personal Microsoft account or a different school, select "Sign out."
+3. Close every Office app, then open Word again.
+4. Sign in with your Fredonia account (eServicesID@fredonia.edu) and complete MFA. Office should re-activate within a minute.
+5. If the message continues, uninstall Office and reinstall it from https://portal.office.com (sign in, then "Install and more" > "Install Microsoft 365 apps").
+Note: The Office license only lasts while you are a currently enrolled student or active employee. If you have graduated or left Fredonia, the desktop apps will eventually stop working and you will need your own Microsoft 365 license. If none of these steps work, contact the ITS Service Center at 716-673-3407 or ITS.ServiceCenter@fredonia.edu.
+
+Q: What other software can students get through Fredonia?
+A: In addition to Microsoft 365, ITS lists Read&Write (Texthelp), Mathematica (students request it through Wolfram's site), and Minitab (your professor must first request access for your class). See the "What Software is Available to Students, Faculty, and Staff?" article in the Fredonia Answers knowledge base for links.
+
 TOPIC: SECURITY AND PHISHING
 Q: I got a suspicious email. What should I do?
 A: Do not click links or reply. Forward the message (with full header information if possible) to ITS.ServiceCenter@fredonia.edu so ITS can check whether it is legitimate, then delete it. If you already clicked a link or entered your password, contact the ITS Service Center immediately at 716-673-3407 and change your password through fredPASS.
